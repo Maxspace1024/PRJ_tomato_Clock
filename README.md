@@ -4,7 +4,7 @@
 
 番茄專案讚啦XD
 
-![image](https://github.com/Maxspace1024/PRJ_tomato_Clock/blob/master/code/tomato.png =100x)
+![image](https://github.com/Maxspace1024/PRJ_tomato_Clock/blob/master/code/tomato.png =100x100)
 
 
 我想說碰碰Android，有一陣子沒練習了<br/>
