@@ -15,6 +15,6 @@
 
 
 ```java
-String.valueOf(<number>)
-Long.valueOf(<string>)
+String.valueOf(/*number*/)
+Long.valueOf(/*string*/)
 ```
