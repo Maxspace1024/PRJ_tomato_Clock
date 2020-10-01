@@ -63,3 +63,11 @@ cdt.start();
 * 倒ˋ數ˇ時間長度 Time_CountDown (ms)
 * Tick的週期   Tick_Peroid (ms)
 
+
+## 改進部分
+- [ ] 防止EditText輸入為空時，按下SET會導致APP閃退
+- [ ] 防止CountDown時更改init_sec
+- [ ] 按番茄多下會產生多個CountDownTimer
+- [ ] 設計按第二次番茄取消計時
+- [ ] 時間到有振動及鬧鈴
+- [ ] 新增番茄動畫，增加互動性
