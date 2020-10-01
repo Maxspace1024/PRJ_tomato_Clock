@@ -55,7 +55,7 @@ CountDownTimer cdt = new CountDownTimer(/*Time_CountDown,Tick_Period*/){
 
 };
 
-cdt.start();
+cdt.start();				//記得啟動倒數計時器
 
 ```
 創立一個CountDownTimer物件<br/><br/>
