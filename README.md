@@ -52,8 +52,8 @@ CountDownTimer cdt = new CountDownTimer(/*Time_CountDown,Tick_Period*/){
 cdt.start();
 
 ```
-創立一個CountDownTimer物件<br/>
-> 參數有兩個
->> 倒數時間長度 Time_CountDown (ms)<br/>
->> Tick的週期   Tick_Peroid (ms)
+創立一個CountDownTimer物件<br/><br/>
+參數有兩個
+* 倒ˋ數時間長度 Time_CountDown (ms)
+* Tick的週期   Tick_Peroid (ms)
 
