@@ -35,6 +35,14 @@ String.format(/*FORMAT STR, ARG1,...*/);
 Color.parseColor(/*#RRGGBB*/);
 ```
 
+#### Toast使用方法
+```java
+Toast.makeToast(	getApplicationContext()
+			,/*MSG
+			,TIME_DURATION*/).show();
+```
+記得要秀出吐司
+
 #### CountDownTimer使用方法
 ```java
 CountDownTimer cdt = new CountDownTimer(/*Time_CountDown,Tick_Period*/){
