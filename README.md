@@ -19,19 +19,17 @@
 
 ## 備註一些Android Code生疏的地方
 
-#### 型態轉換
+
+#### 常用method
 ```java
+//型態轉換
 String.valueOf(/*NUMBER*/);
 Long.valueOf(/*STRING*/);
-```
 
-#### 格式化輸出
-```java
+//格式化輸出
 String.format(/*FORMAT STR, ARG1,...*/);
-```
 
-#### 套用顏色
-```java
+//套用顏色
 Color.parseColor(/*#RRGGBB*/);
 ```
 
