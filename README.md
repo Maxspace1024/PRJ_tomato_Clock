@@ -41,7 +41,7 @@ Toast.makeToast(	getApplicationContext()
 			,/*MSG
 			,TIME_DURATION*/).show();
 ```
-記得要秀出吐司
+記得要秀出吐司www<br/>
 
 #### CountDownTimer使用方法
 ```java
@@ -62,6 +62,6 @@ cdt.start();
 ```
 創立一個CountDownTimer物件<br/><br/>
 參數有兩個
-* 倒ˋ數時間長度 Time_CountDown (ms)
+* 倒ˋ數ˇ時間長度 Time_CountDown (ms)
 * Tick的週期   Tick_Peroid (ms)
 
