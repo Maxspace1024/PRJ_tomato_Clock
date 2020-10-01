@@ -14,7 +14,7 @@
 備註一些Android Code生疏的地方
 
 
-* ```java
+```java
 String.valueOf(<number>)
 Long.valueOf(<string>)
-```型態轉換
+```
