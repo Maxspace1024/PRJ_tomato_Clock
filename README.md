@@ -34,3 +34,26 @@ String.format(/*FORMAT STR, ARG1,...*/);
 ```java
 Color.parseColor(/*#RRGGBB*/);
 ```
+
+#### CountDownTimer使用方法
+```java
+CountDownTimer cdt = new CountDownTimer(/*Time_CountDown,Tick_Period*/){
+
+	@Override
+        public void onTick(long millisUntilFinished) {
+        }
+
+        @Override
+        public void onFinish() {
+	}
+
+};
+
+cdt.start();
+
+```
+創立一個CountDownTimer物件<br/>
+> 參數有兩個
+>> 倒數時間長度 Time_CountDown (ms)
+>> Tick的週期   Tick_Peroid (ms)
+
