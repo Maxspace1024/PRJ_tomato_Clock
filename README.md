@@ -11,11 +11,10 @@
 附上APP螢幕截圖<br/>
 <img src="https://github.com/Maxspace1024/PRJ_tomato_Clock/blob/master/shots/shots_01.png" width="300"/><br/>
 點擊中間的番茄<br/>
-計時器就會開始倒數<br/><br/>
-
+計時器就會開始倒數<br/>
 也可以個人化設定時間<br/>
 
-<br/><br/>
+<br/>
 
 ## 備註一些Android Code生疏的地方
 
@@ -63,7 +62,7 @@ cdt.start();				//記得啟動倒數計時器
 * 倒ˋ數ˇ時間長度 Time_CountDown (ms)
 * Tick的週期   Tick_Peroid (ms)
 
-### 新東西
+## 新東西
 
 #### Vibrator
 首先必須在AndroidManifest.xml加入取得權限:
@@ -89,6 +88,11 @@ cdt.cancel();
 ```
 Vibrator object 盡量不要命名 v<br/>
 不然在setOnClickListener會跟 View v 打架
+
+#### git
+如果gitk無法顯示中文<br/>
+在git commandline 輸入
+> git config --global gui.encoding utf-8
 
 
 ## 改進部分
