@@ -34,9 +34,9 @@ Color.parseColor(/*#RRGGBB*/);
 
 #### Toast使用方法
 ```java
-Toast.makeToast(	getApplicationContext()
-			,/*MSG
-			,TIME_DURATION*/).show();
+Toast.makeToast( getApplicationContext()	//here can not use "this"
+		 ,/*MESSAGE*/
+		 ,/*TIME_DURATION*/).show();
 ```
 記得要秀出吐司www<br/>
 
@@ -89,6 +89,12 @@ cdt.cancel();
 Vibrator object 盡量不要命名 v<br/>
 不然在setOnClickListener會跟 View v 打架
 
+#### Button Enable
+```java
+btn.setEnable(/*true or false*/);
+\\easy~~
+```
+
 #### git
 如果gitk無法顯示中文<br/>
 在git commandline 輸入
@@ -96,8 +102,8 @@ Vibrator object 盡量不要命名 v<br/>
 
 
 ## 改進部分
-- [ ] 防止EditText輸入為空時，按下SET會導致APP閃退
-- [ ] 防止CountDown時更改init_sec
+- [x] 防止EditText輸入為空時，按下SET會導致APP閃退
+- [x] 防止CountDown時更改init_sec
 - [x] 按番茄多下會產生多個CountDownTimer
 - [x] 設計按第二次番茄取消計時
 - [x] 時間到有振動及鬧鈴

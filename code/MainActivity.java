@@ -47,18 +47,18 @@ public class MainActivity extends AppCompatActivity {
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                init_sec = Long.valueOf(et1.getText().toString())*60;
-                tv1.setText(String.format("%02d:%02d",init_sec/60,init_sec%60));
-                tv1.setTextColor(Color.parseColor("#404040"));
+                String str = et1.getText().toString();
 
-                Toast t = Toast.makeText(       getApplicationContext()                             //cannot use "this"
-                                                ,String.format("set %d mins",init_sec/60)
-                                                ,Toast.LENGTH_SHORT);
+                if(str.equals("")){
+                    Toast.makeText(getApplicationContext(),"mins can not be empty",Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    init_sec = Long.valueOf(str)*60;
+                    tv1.setText(String.format("%02d:%02d",init_sec/60,init_sec%60));
+                    tv1.setTextColor(Color.parseColor("#404040"));
 
-                //View toastView = t.getView();                                                     //make View object
-                //toastView.setBackgroundColor(Color.parseColor("#000000"));
-
-                t.show();                                                                           //remember to show
+                    Toast.makeText(getApplicationContext(),String.format("set %d mins",init_sec/60),Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
                     tv1.setText(String.format("%02d:%02d",init_sec/60,init_sec%60));
                     tv1.setTextColor(Color.parseColor("#404040"));
 
+                    bt1.setEnabled(true);                                                           //Enable btn
                     vibrator.cancel();                                                              //stop vibrator
 
                     cdt = new CountDownTimer(init_sec*1000,1000) {
@@ -93,11 +94,14 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"init timer",Toast.LENGTH_SHORT).show();
                 }
                 else if(tomatoFlag==1){                                                             //1 -- timer on
-                    cdt.start();                                                                    //need to launch
+                    cdt.start();                                                                    //launch timer
+                    bt1.setEnabled(false);                                                          //disable btn
+
                     Toast.makeText(getApplicationContext(),"launch",Toast.LENGTH_SHORT).show();
                 }
                 else if(tomatoFlag==2){                                                             //2 -- timer off
-                    cdt.cancel();
+                    cdt.cancel();                                                                   //stop timer
+
                     Toast.makeText(getApplicationContext(),"cancel",Toast.LENGTH_SHORT).show();
                 }
 
