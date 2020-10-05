@@ -27,7 +27,7 @@ String.valueOf(/*NUMBER*/);
 Long.valueOf(/*STRING*/);
 
 //格式化輸出
-String.format(/*FORMAT STR, ARG1,...*/);
+String.format(/*FORMAT STR*/, /*ARG1*/,/*...*/);
 
 //套用顏色
 Color.parseColor(/*#RRGGBB*/);
@@ -43,7 +43,7 @@ Toast.makeToast(	getApplicationContext()
 
 #### CountDownTimer使用方法
 ```java
-CountDownTimer cdt = new CountDownTimer(/*Time_CountDown,Tick_Period*/){
+CountDownTimer cdt = new CountDownTimer(/*Time_CountDown*/,/*Tick_Period*/){
 
 	@Override
         public void onTick(long millisUntilFinished) {
@@ -77,7 +77,7 @@ Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
 vibrator.vibrate(/*DURATION*/);			//unit is ms
 //or
-vibrator.vibrate(/*PATTERN,REPEAT*/);		//long array {rest ,vibrate ,...} ,unit is ms
+vibrator.vibrate(/*PATTERN*/,/*REPEAT*/);	//long array {rest ,vibrate ,...} ,unit is ms
 //REPEAT 0(循環) -1(一次)
 ```
 #### cancel
