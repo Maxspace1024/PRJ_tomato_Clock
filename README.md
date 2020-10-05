@@ -77,12 +77,13 @@ Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
 vibrator.vibrate(/*DURATION*/);			//unit is ms
 //or
-vibrator.vibrate(/*PATTERN*/,/*REPEAT*/);	//long array {rest ,vibrate ,...} ,unit is ms
+vibrator.vibrate(/*PATTERN*/,/*REPEAT*/);
+//long array {rest ,vibrate ,...} ,unit is ms
 //REPEAT 0(循環) -1(一次)
 ```
 #### cancel
 ```java
-v.cancel();
+vibrator.cancel();
 cdt.cancel();
 \\這樣就停止了，簡單
 ```
