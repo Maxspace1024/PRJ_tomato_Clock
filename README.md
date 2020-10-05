@@ -102,7 +102,7 @@ btn.setEnable(/*true or false*/);
 
 
 ## 改進部分
-- [x] 防止EditText輸入為空時，按下SET會導致APP閃退
+:white_check_mark: 防止EditText輸入為空時，按下SET會導致APP閃退
 - [x] 防止CountDown時更改init_sec
 - [x] 按番茄多下會產生多個CountDownTimer
 - [x] 設計按第二次番茄取消計時
