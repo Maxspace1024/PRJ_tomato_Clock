@@ -63,11 +63,39 @@ cdt.start();				//記得啟動倒數計時器
 * 倒ˋ數ˇ時間長度 Time_CountDown (ms)
 * Tick的週期   Tick_Peroid (ms)
 
+### 新東西
+
+#### Vibrator
+首先必須在AndroidManifest.xml加入取得權限:
+```xml
+<uses-permission android:name="android.permission.VIBRATE" />
+```
+與 <b>application</b> 同一層
+
+```java
+Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+
+vibrator.vibrate(/*DURATION*/);			//unit is ms
+//or
+vibrator.vibrate(/*PATTERN,REPEAT*/);		//long array {rest ,vibrate ,...} ,unit is ms
+//REPEAT 0(循環) -1(一次)
+```
+#### cancel
+```java
+v.cancel();
+cdt.cancel();
+\\這樣就停止了，簡單
+```
+Vibrator object 盡量不要命名 v<br/>
+不然在setOnClickListener會跟 View v 打架
+
 
 ## 改進部分
 - [ ] 防止EditText輸入為空時，按下SET會導致APP閃退
 - [ ] 防止CountDown時更改init_sec
-- [ ] 按番茄多下會產生多個CountDownTimer
-- [ ] 設計按第二次番茄取消計時
-- [ ] 時間到有振動及鬧鈴
+- [x] 按番茄多下會產生多個CountDownTimer
+- [x] 設計按第二次番茄取消計時
+- [x] 時間到有振動及鬧鈴
 - [ ] 新增番茄動畫，增加互動性
+
+
