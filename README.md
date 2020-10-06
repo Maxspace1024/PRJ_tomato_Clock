@@ -95,11 +95,11 @@ btn.setEnable(/*true or false*/);
 \\easy~~
 ```
 #### onTouch
-使用`setOnTouchListener`
-MotionEvent event用來偵測螢幕互動
+使用`setOnTouchListener`<br/>
+`MotionEvent event`用來偵測螢幕互動<br/>
 `event.getAction()`取得目前螢幕互動狀態
 
-`MotionEvent.ACTION_DOWN`按下
+`MotionEvent.ACTION_DOWN`按下<br/>
 `MotionEvent.ACTION_UP`放開
 
 #### Animation
