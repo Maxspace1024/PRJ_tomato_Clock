@@ -103,11 +103,20 @@ btn.setEnable(/*true or false*/);
 `MotionEvent.ACTION_UP`放開
 
 #### Animation
-`ObjectAnimator.ofFloat()`創建`ObjectAnimator`物件
+`ObjectAnimator.ofFloat()`創建`ObjectAnimator`物件<br/>
 參數為 ( ??View object , animation type , arg1,arg2,... )
 1. `EditView` ,`TextView`,`ImageView`,...
 2. `"scaleX"`,`"scaleY"`,`"rotation"`,`"x"`,`"y"`,...
 3. floating number
+
+```java
+AnimatorSet animSet = new AnimatorSet();
+animSet.playTogether(/*put ObjectAnimator Objects*/);
+animSet.start();
+
+//animSet has also "addListener" method
+
+```
 
 
 #### git
