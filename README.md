@@ -65,7 +65,7 @@ cdt.start();				//記得啟動倒數計時器
 ## 新東西
 
 #### Vibrator
-首先必須在AndroidManifest.xml加入取得權限:
+首先必須在`AndroidManifest.xml`加入取得權限:
 ```xml
 <uses-permission android:name="android.permission.VIBRATE" />
 ```
@@ -94,6 +94,21 @@ Vibrator object 盡量不要命名 v<br/>
 btn.setEnable(/*true or false*/);
 \\easy~~
 ```
+#### onTouch
+使用`setOnTouchListener`
+MotionEvent event用來偵測螢幕互動
+`event.getAction()`取得目前螢幕互動狀態
+
+`MotionEvent.ACTION_DOWN`按下
+`MotionEvent.ACTION_UP`放開
+
+#### Animation
+`ObjectAnimator.ofFloat()`創建`ObjectAnimator`物件
+參數為 ( ??View object , animation type , arg1,arg2,... )
+1. `EditView` ,`TextView`,`ImageView`,...
+2. `"scaleX"`,`"scaleY"`,`"rotation"`,`"x"`,`"y"`,...
+3. floating number
+
 
 #### git
 如果gitk無法顯示中文<br/>
@@ -112,5 +127,6 @@ btn.setEnable(/*true or false*/);
 
 :white_check_mark: 時間到有振動及鬧鈴
 
-:white_square_button: 新增番茄動畫，增加互動性
+:white_check_mark: 新增番茄動畫，增加互動性
 
+~~`:white_square_button:`~~
